@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
         <script src="script.js" defer></script>
+        <script src="https://kit.fontawesome.com/693fc9117a.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -17,47 +18,48 @@
             <div id="sidebar">
                 <div class="sidebar-logo">
                     <ul>
-                        <li>Dashboard</li>
+                        <li><i class="fa-solid fa-table-columns"></i>Dashboard</li>
                     </ul>
                 </div>
     
                 <div class="sidebar-list-top">
                     <ul>
-                        <li>Home</li>
-                        <li>Profile</li>
-                        <li>Messages</li>
-                        <li>History</li>
-                        <li>Tasks</li>
-                        <li>Communities</li>
+                        <li><i class="fa-solid fa-house"></i>Home</li>
+                        <li><i class="fa-solid fa-address-card"></i>Profile</li>
+                        <li><i class="fa-solid fa-message"></i>Messages</li>
+                        <li><i class="fa-solid fa-clock-rotate-left"></i>History</li>
+                        <li><i class="fa-solid fa-list-check"></i>Tasks</li>
+                        <li><i class="fa-solid fa-people-group"></i>Communities</li>
                     </ul>
                 </div>
     
                 <div class="sidebar-list-bottom">
                     <ul>
-                        <li>Settings</li>
-                        <li>Support</li>
-                        <li>Privacy</li>
+                        <li><i class="fa-solid fa-gear"></i>Settings</li>
+                        <li><i class="fa-solid fa-circle-question"></i>Support</li>
+                        <li><i class="fa-solid fa-shield-halved"></i>Privacy</li>
                     </ul>
                 </div>
             </div>
     
             <div id="main-content">
-                <div id="header">
+                
                     <div class="header-left">
                         <ul>
-                            <li><input type="text" id="search-bar"></li>
+                            <li><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="search-bar"></li>
                         </ul>
-                        <img src="images/profile-pic.png" alt="profile-pic" id="profile-picture">
+                        <img src="images/profile-pic.png" alt="profile-pic" id="profile-picture-left">
                         <p>Hi there,</p>
                         <p id="username">Alex Hewitt (@alexhewitt)</p>
         
                     </div>
         
                     <div class="header-right">
-        
+                        <ul>
+                            <li><i class="fa-solid fa-bell"></i></li>
+                            <li><img src="images/profile-pic.png" alt="profile-pic" class="profile-picture"></li>
+                        </ul>
                     </div>
-        
-                </div>
                 
                 <div class="projects-div">
                     <h1>Your Projects</h1>
@@ -95,11 +97,11 @@
                 </div>
                 
                 <div class="announcements-div">
-
+                    <h2>Announcements</h2>
                 </div>
 
                 <div class="trending-div">
-
+                    <h2>Trending</h2>
                 </div>
 
             </div>

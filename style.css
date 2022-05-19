@@ -8,30 +8,43 @@ body{
     font-family: 'Roboto Flex', sans-serif;
 }
 
+i{
+    padding-right: 20px;
+}
+
+li{
+    padding-bottom: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
 
 /* ID Selectors */
 
-#header{
-    grid-area: 1 / 2 / 2 / 3;
-}
-
 #main-content{
+    display: grid;
+    gap: 10px;
     grid-area: 1 / 2 / 2 / 3;
+    grid-template: 1fr 2fr 2fr / 4fr 2fr;
     padding: 3rem;
 }
 
-#profile-picture{
-    max-width: 100px;
+#profile-picture-left{
+    max-width: 70px;
 }
 
 #sidebar{
     background-color: rgba(48, 179, 240, 1);
+    color: white;
     display: grid;
-    grid-template-rows: minmax(100px, 150px) minmax(200px, 2rem) minmax(200px, 2rem);
+    font-size: x-large;
+    gap: 4rem;
+    grid-template-rows: minmax(100px, 150px) minmax(200px, 4rem) minmax(200px, 2rem);
 }
 
 #sidebar>div{
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
     margin-left: 40px;
 }
 
@@ -43,8 +56,25 @@ body{
     height: 100vh;
 }
 
+.header-left{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.header-right{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.profile-picture{
+    max-width: 50px;
+}
+
+.projects-div{
+    grid-area: 2 / 1 / 5 / 2;
+}
+
 .sidebar-logo{
     grid-area: 1 / 1 / 2 / 2;
+    padding-top: 1rem;
 }
 
 .sidebar-list-bottom{
