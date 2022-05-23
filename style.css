@@ -167,11 +167,11 @@ ul {
     background-color: white;
     border-left: 8px solid rgba(240, 180, 41, 1);
     border-radius: 8px;
-    padding: 2rem 1rem;
+    display: grid;
+    grid-template-rows: min-content minmax(min-content, 1fr) min-content;
     max-height: 150px;
-    max-width: 20rem;
     min-height: 100px;
-    min-width: min-content;
+    padding: 2rem 1rem;
 }
 
 .card > h2{
@@ -179,9 +179,21 @@ ul {
     font-weight: 1000;
 }
 
+.card-icons{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: 1fr;
+    padding-left: 10rem;
+}
+
+.card-icons > img{
+    max-height: 25px;
+}
+
 .cards-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     grid-template-rows: repeat(auto-fit, minmax(150px, 200px));
     gap: 20px;
 }
