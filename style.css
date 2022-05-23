@@ -8,6 +8,12 @@ body {
     font-family: 'Roboto Flex', sans-serif;
 }
 
+hr {
+    background-color: #d6d6d6;
+    border: none;
+    height: 1px;
+}
+
 i {
     padding-right: 20px;
 }
@@ -28,11 +34,28 @@ li:hover {
     cursor: pointer;
 }
 
+p {
+    color: #5f5f5f;
+}
+
 ul {
     list-style-type: none;
 }
 
 /* ID Selectors */
+
+#announcements-card{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px #acacac;
+    display: grid;
+    gap: 10px;
+    padding: 2rem;
+}
+
+#announcements-card>div>p{
+    padding-bottom: 10px;
+}
 
 #bell-icon {
     max-width: 20px;
@@ -127,6 +150,16 @@ ul {
     margin-left: 40px;
 }
 
+#trending-card-container{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px #acacac;
+    display: grid;
+    gap: 1rem;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
 #username {
     font-size: x-large;
     font-weight: 700;
@@ -135,7 +168,11 @@ ul {
 /* Class Selectors */
 
 .announcements-div {
+    display: grid;
     grid-area: 1 / 2 / 2 / 3;
+    grid-template: 3rem 1fr / 1fr;
+    padding-bottom: 2rem;
+    margin-right: 2rem;
 }
 
 .btn {
@@ -163,10 +200,11 @@ ul {
     cursor: pointer;
 }
 
-.card{
+.card {
     background-color: white;
     border-left: 8px solid rgba(240, 180, 41, 1);
     border-radius: 8px;
+    box-shadow: 0px 3px 10px #acacac;
     display: grid;
     grid-template-rows: min-content minmax(min-content, 1fr) min-content;
     max-height: 150px;
@@ -174,24 +212,25 @@ ul {
     padding: 2rem 1rem;
 }
 
-.card > h2{
+.card>h2 {
     font-size: medium;
     font-weight: 1000;
 }
 
-.card-icons{
+.card-icons {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, min-content);
     grid-template-rows: 1fr;
-    padding-left: 10rem;
+    opacity: 0.7;
+    padding-left: 50%;
 }
 
-.card-icons > img{
+.card-icons>img {
     max-height: 25px;
 }
 
-.cards-container{
+.cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     grid-template-rows: repeat(auto-fit, minmax(150px, 200px));
@@ -264,4 +303,20 @@ ul {
 
 .trending-div {
     grid-area: 2 / 2 / 3 / 3;
+}
+
+.trending-info {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr;
+}
+
+.trending-info>div>h4{
+    font-weight: 600;
+}
+
+.trending-info>img{
+    max-width: 75px;
 }
